@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+     <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <!-- trigger Modal -->
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">A project based approach to learn Modal </h1>
+            <p class="text-center"><a href="#"  class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#login-modal">Login Here</a></p>
+        </div>
+    </div>
+    
+
+  
+  <!-- Modal -->
+  <div class="modal fade " id="login-modal" tabindex="-1" aria-labelledby="login-modal" aria-hidden="true">
+    <div class="modal-dialog align-items-center">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img id="img_logo" class="img-thumbnail" src="img/apple-touch-icon.png" alt=""> 
+        </div>
+       <div id="div-forms">
+           <form> 
+               <div class="modal-body justify-content-center">
+                <div>
+                    <span> Type your Email id and password here</span>
+                </div>
+                <input class="form-control mt-10px" placeholder="Email" type="text" required>
+                <input class="form-control mt-10px" placeholder="Password" type="password" required>
+                <div class="checkbox">
+                    <label>
+                     <input type="checkbox">Remember me
+                    </label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <button class="btn btn-primary btn-sm btn-block" type="submit">Login</button>
+                      </div>
+                      <div class="col-sm-8">
+                        <button class="btn btn-primary btn-sm btn-block" type="submit">Sign up</button>
+                      </div>
+                  </div>
+              </div>
+           </form>
+       </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
